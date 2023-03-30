@@ -10,7 +10,9 @@ export const Settings = () => {
     return (
         <div style={{ border: '5px solid red', padding: '8px' }} id="settings">
             <h4>Settings</h4>
-            <input type={'text'} />
+            <input type={'text'} onChange={(event)=> {
+                changeGreeting(event.target.value);
+            }}/>
         </div>
     )
 }
